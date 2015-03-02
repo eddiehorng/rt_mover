@@ -59,7 +59,7 @@ done
 
 #return
 $adb_cmd $tap 235 715
-sleep 5
+sleep 8
 
 #get gift
 $adb_cmd $tap 355 905
