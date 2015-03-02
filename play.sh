@@ -3,7 +3,7 @@
 adb_cmd='sudo adb shell'
 tap='input tap'
 logfile='log.txt'
-check_gameover_init=120
+check_gameover_init=90
 check_gameover_period=10
 
 function printlog()
