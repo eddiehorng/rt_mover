@@ -1,0 +1,14 @@
+This is a simple auto player for 雷霆戰機 無盡模式
+
+USAGE:
+1. Imagemagick is used: http://www.imagemagick.org
+2. In the script, adb is run after sudo, use visudor to set sudo as no password check, or make sue your adb is work in non-root condition and modify the script
+3. Connect device to host
+4. Enter 雷霆戰機, stay in home screen, open a terminal and execute ./run.sh
+5. Network should be stable, or reconnect dialog will popup and discontinue auto click.
+
+TODO:
+1. So far the point x,y are only for 720p device, the locations should be dynamically calculated for different resolution devices.
+2. Graphic compairing is only used in gameover check, other steps can also apply this method to avoid miss timing by simple sleep/delay.
+3. "Missile" can kill player immediately, use graphic compairing method is possible to detect and change fly position. This will make life much longer.
+
