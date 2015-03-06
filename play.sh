@@ -13,7 +13,7 @@ function printlog()
 {
     msg=$1
     prefix_time=`date "+%Y/%m/%d %H:%M:%S"`
-    echo $prefix_time" "$msg >> $logfile
+    echo $prefix_time" "$msg 
 }
 
 function appeared()
@@ -36,29 +36,35 @@ function is_gameover()
 {
     appeared sc_gameover[@]
     over=$?
-    if [ $over -eq 0 ]; then
-        # check if neterror dialog appear, but no screen capture again cause we just did that
-        handle_neterror 1
-        return $?
-    fi 
+    handle_neterror
+#     if [ $over -eq 0 ]; then
+#         # check if neterror dialog appear, but no screen capture again cause we just did that
+#         handle_neterror 1
+#         return $?
+#     fi 
     
     return $over
 }
 
 function handle_neterror()
 {
-    no_cap=( $1 )
+    if [ -n $1 ]; then
+        no_cap=( )
+    else
+        no_cap=( 1 )
+    fi
     appeared sc_network[@] no_cap[@]
     if [ $? -eq 1 ]; then
         printlog "Network error dialog detected"
         $adb_cmd $tap 510 735
-        sleep 10
+        sleep 5
         return 1
     fi
     return 0
 }
 
 printlog "Entering game"
+handle_neterror 1
 #enter 
 $adb_cmd $tap 175 1160
 sleep 10
