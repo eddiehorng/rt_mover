@@ -3,24 +3,35 @@
 adb_cmd='sudo adb shell'
 tap='input tap'
 logfile='log.txt'
-check_gameover_init=90
-check_gameover_period=10
 
-sc_endless=( '160x60+56+1130' 'endless_crop.png' )
+check_match_period=6
 
-sc_gameover=( '200x55+132+682' 'g_crop.png' )
-sc_network=( '580x110+80+685' 'n_crop.png' )
+# ctrl_endless=( '160x60+56+1130' 'endless_crop.png' 175 1160)
+# ctrl_attack=( '192x32+268+1120' 'attack_crop.png' 360 1140)
+# ctrl_gameover=( '200x55+132+682' 'gameover_crop.png' 235 715)
+# ctrl_gift=( '186x48+264+888' 'gift_crop.png' 355 905)
+# ctrl_continue=( '200x48+98+1120' 'continue_crop.png' 355 905)
+# ctrl_network=( '580x110+80+685' 'dialog_crop.png' 510 735)
+
+declare -a c0=( '160x60+56+1130' 'endless_crop.png' 175 1160)
+declare -a c1=( '192x32+268+1120' 'attack_crop.png' 360 1140)
+declare -a c2=( '200x55+132+682' 'gameover_crop.png' 235 715)
+declare -a c3=( '186x48+264+888' 'gift_crop.png' 355 905)
+declare -a c4=( '200x48+98+1120' 'continue_crop.png' 195 1150)
+declare -a c5=( '580x110+80+685' 'dialog_crop.png' 510 735)
+c_num=6
 
 function printlog()
 {
     msg=$1
     prefix_time=`date "+%Y/%m/%d %H:%M:%S"`
-    echo $prefix_time" "$msg >> $logfile
+    echo $prefix_time" "$msg 
 }
 
 function appeared()
 {
-    declare -a sc=("${!1}")
+    location=$1
+    pic=$2
     declare -a no_cap=("${!2}")
     if [ ! $no_cap ]; then
         $adb_cmd screencap -p | sed 's/\r$//' > screen.png
@@ -34,78 +45,30 @@ function appeared()
     fi
 }
 
-function is_gameover()
-{
-    appeared sc_gameover[@]
-    over=$?
-    if [ $over -eq 0 ]; then
-        # check if neterror dialog appear, but no screen capture again cause we just did that
-        handle_neterror 1
-        return $?
-    fi 
-    
-    return $over
-}
-
-function handle_neterror()
-{
-    no_cap=( $1 )
-    appeared sc_network[@] no_cap[@]
-    if [ $? -eq 1 ]; then
-        printlog "Network error dialog detected"
-        $adb_cmd $tap 510 735
-        sleep 10
-        return 1
-    fi
-    return 0
-}
-
-printlog "Entering game"
-#enter 
-$adb_cmd $tap 175 1160
-sleep 10
-handle_neterror
-
-#strike
-$adb_cmd $tap 360 1140
-sleep 3
-
-#strike
-$adb_cmd $tap 360 1140
-sleep 3
-
-#strike
-$adb_cmd $tap 360 1140
-sleep 3
-
-#playing game
-sleep $check_gameover_init
 while true
 do
-    printlog "Check is gameover?"
-    is_gameover
-    if [ $? -eq 1 ]; then
-        printlog "Gameover!"
-        break    
-    else
-        printlog "Not gameover, wait for a while..."
-        sleep $check_gameover_period
-    fi    
+    $adb_cmd screencap -p | sed 's/\r$//' > screen.png
+    for (( i=0;i<$c_num;i++ ))
+    do
+        var="c"$i"[0]"
+        location=${!var}
+        var="c"$i"[1]"
+        pic=${!var}
+        var="c"$i"[2]"
+        x=${!var}
+        var="c"$i"[3]"
+        y=${!var}
+
+        # echo ${!var}
+#         echo $location
+#         echo $pic
+        convert screen.png -crop $location tmp.png
+        s=`compare -metric MAE tmp.png $pic null: 2>&1`
+        if [ "$s" = "0 (0)" ]; then 
+            printlog "Found $pic"
+            $adb_cmd $tap $x $y
+            break
+        fi
+    done
+    sleep $check_match_period
 done
-
-sleep 8
-handle_neterror
-
-#return
-$adb_cmd $tap 235 715
-sleep 8
-handle_neterror
-
-#get gift
-$adb_cmd $tap 355 905
-sleep 3
-
-#continue
-$adb_cmd $tap 195 1150
-sleep 10
-printlog "Return to home"
