@@ -17,9 +17,12 @@ c_num=6
 
 function printlog()
 {
-    msg=$1
+    msg1=$1
+    msg2=$2
     prefix_time=`date "+%Y/%m/%d %H:%M:%S"`
-    log=$prefix_time" "$msg
+    today=`date "+%Y/%m/%d"`
+    times=`cat $logfile | grep "$today" | grep "$msg1" -c`
+    log=$prefix_time" "$msg1" -- "$msg2" #"$times
     echo $log
     echo $log >> $logfile
 }
@@ -55,7 +58,7 @@ do
                 else
                     diff=`echo $((now-start)) | awk '{print int($1/60)":"int($1%60)}'`
                 fi
-                printlog "Found $pic -- $diff"
+                printlog "Found $pic" $diff
                 let $last_occur_var=$now
                 $adb_cmd $tap $x $y
                 break
