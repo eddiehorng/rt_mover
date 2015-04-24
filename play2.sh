@@ -7,7 +7,7 @@ logfile='log'
 check_match_period=6
 
 
-declare -a c0=( '160x60+56+1130' 'endless_crop.png' 175 1160 0)
+declare -a c0=( '270x80+26+1130' 'endless_crop2.png' 175 1160 0)
 declare -a c1=( '192x32+268+1120' 'attack_crop.png' 360 1140 0)
 declare -a c2=( '200x55+132+682' 'gameover_crop.png' 235 715 0)
 declare -a c3=( '186x48+264+888' 'gift_crop.png' 355 905 0)
