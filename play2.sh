@@ -2,9 +2,10 @@
 
 adb_cmd='sudo adb shell'
 tap='input tap'
+swipe='input swipe'
 logfile='log'
 
-check_match_period=6
+check_match_period=3
 
 
 declare -a c0=( '270x80+26+1130' 'endless_crop2.png' 175 1160 0)
@@ -13,7 +14,9 @@ declare -a c2=( '200x55+132+682' 'gameover_crop.png' 235 715 0)
 declare -a c3=( '186x48+264+888' 'gift_crop.png' 355 905 0)
 declare -a c4=( '200x48+98+1120' 'continue_crop.png' 195 1150 0)
 declare -a c5=( '580x110+80+685' 'dialog_crop.png' 510 735 0)
-c_num=6
+declare -a c6=( '192x42+264+970' 'iknow_crop.png' 264 970 0)
+declare -a c7=( '37x27+342+964' 'fly_crop.png' 342+387 964+964 0)
+c_num=8
 
 function printlog()
 {
@@ -60,7 +63,14 @@ do
                 fi
                 printlog "Found $pic" $diff
                 let $last_occur_var=$now
-                $adb_cmd $tap $x $y
+                if [[ $x == *"+"* ]] || [[ $x == *"-"* ]]; then
+                  xx=( `echo $x | sed 's/[\+|\-]/ /'` )
+                  yy=( `echo $y | sed 's/[\+|\-]/ /'` )
+                  printlog "Swipe ${xx[0]} ${yy[0]} ${xx[1]} ${yy[1]}"
+                  $adb_cmd $swipe ${xx[0]} ${yy[0]} ${xx[1]} ${yy[1]}
+                else
+                  $adb_cmd $tap $x $y
+                fi
                 break
             fi
         done
