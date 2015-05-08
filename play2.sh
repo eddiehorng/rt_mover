@@ -16,7 +16,8 @@ declare -a c4=( '200x48+98+1120' 'continue_crop.png' 195 1150 0)
 declare -a c5=( '580x110+80+685' 'dialog_crop.png' 510 735 0)
 declare -a c6=( '192x42+264+970' 'iknow_crop.png' 264 970 0)
 declare -a c7=( '37x27+342+964' 'fly_crop.png' 342+387 964+964 0)
-c_num=8
+declare -a c8=( '100x32+188+1120' 'attack1_crop.png' 190 1122 0)
+c_num=9
 
 function printlog()
 {
