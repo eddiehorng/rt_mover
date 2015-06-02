@@ -68,6 +68,7 @@ do
                 let $last_occur_var=$now
                 if [[ $x == *"+"* ]] || [[ $x == *"-"* ]]; then
 		    if [ $once_moved -eq 0 ]; then
+			sleep 10
 			once_moved=1
                   xx=( `echo $x | sed 's/[\+|\-]/ /'` )
                   yy=( `echo $y | sed 's/[\+|\-]/ /'` )
