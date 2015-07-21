@@ -21,7 +21,7 @@ declare -a c8=( '100x32+188+1120' 'attack1_crop.png' 190 1122 0)
 c_num=9
 
 once_moved=0
-swipe_delay=14
+swipe_delay=24
 
 function printlog()
 {
