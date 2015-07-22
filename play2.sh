@@ -7,6 +7,7 @@ logfile='log'
 
 check_match_period=3
 
+crop_base='crops'
 
 declare -a c0=( '270x80+26+1130' 'endless_crop2.png' 175 1160 0)
 declare -a c1=( '192x32+268+1120' 'attack_crop.png' 360 1140 0)
@@ -21,7 +22,7 @@ declare -a c8=( '100x32+188+1120' 'attack1_crop.png' 190 1122 0)
 c_num=9
 
 once_moved=0
-swipe_delay=24
+swipe_delay=28
 
 function printlog()
 {
@@ -35,6 +36,7 @@ function printlog()
     echo $log >> $logfile
 }
 
+./startapp.sh
 
 while true
 do
@@ -45,7 +47,7 @@ do
             var="c"$i"[0]"
             location=${!var}
             var="c"$i"[1]"
-            pic=${!var}
+            pic=$crop_base"/"${!var}
             var="c"$i"[2]"
             x=${!var}
             var="c"$i"[3]"
@@ -80,7 +82,7 @@ do
 		  printlog "Found $pic" $diff
                   $adb_cmd $tap $x $y
                 fi
-		if [ $pic = "gameover_crop.png" ]; then
+		if [[ $pic == *"gameover_crop.png"* ]]; then
 		  once_moved=0
 		fi
                 break
