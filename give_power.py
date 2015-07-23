@@ -18,7 +18,7 @@ def give_power(img_enter, img_power):
                     page_down=True
 
 if __name__ == '__main__':
-    startapp()
+    #startapp()
     give_power('endless_crop2', 'power1')
     give_power('team', 'power2')
 

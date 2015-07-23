@@ -32,7 +32,7 @@ def match_image(crop, capture, val):
 
     result = cv2.matchTemplate(image,template,cv2.TM_CCORR_NORMED)
     minVal,maxVal,minLoc,maxLoc = cv2.minMaxLoc(result)
-    print 'matching %s, val=%f' % (crop, maxVal)
+    print 'matching %s, maxVal=%f, val=%f' % (crop, maxVal, val)
     #loc = np.where(result>0.99)
 
     if maxVal>=val:
@@ -56,7 +56,7 @@ def swipe(x, x2, y, y2, sleep_time=0):
 def crop_filename(image):
     return os.path.join(crops_base, image)+'.png'
 
-def click_on(image, sleep_time=0, update_screen=True, maxVal=1.0):
+def click_on(image, sleep_time=0, update_screen=True, maxVal=0.9999):
     if update_screen:
         screencap()
     x, y = match_image(crop_filename(image), screencap_fn, maxVal)
