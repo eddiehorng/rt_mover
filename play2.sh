@@ -1,13 +1,8 @@
 #!/bin/bash
 
-adb_cmd='sudo adb shell'
-tap='input tap'
-swipe='input swipe'
-logfile='log'
+source common.sh
 
 check_match_period=3
-
-crop_base='crops'
 
 declare -a c0=( '270x80+26+1130' 'endless_crop2.png' 175 1160 0)
 declare -a c1=( '192x32+268+1120' 'attack_crop.png' 360 1140 0)
@@ -24,19 +19,6 @@ c_num=9
 once_moved=0
 swipe_delay=28
 
-function printlog()
-{
-    msg1=$1
-    msg2=$2
-    prefix_time=`date "+%Y/%m/%d %H:%M:%S"`
-    today=`date "+%Y/%m/%d"`
-    times=`cat $logfile | grep "$today" | grep "$msg1" -c`
-    log=$prefix_time" "$msg1" -- "$msg2" #"$times
-    echo $log
-    echo $log >> $logfile
-}
-
-./startapp.sh
 
 while true
 do
