@@ -14,11 +14,11 @@ def give_power(img_enter, img_power):
                 if page_down:
                     break
                 else:
-                    swipe(360, 900, 360, 300, 2)
+                    swipe(360, 900, 360, 400, 2)
                     page_down=True
 
 if __name__ == '__main__':
-    #startapp()
+    startapp()
     give_power('endless_crop2', 'power1')
     give_power('team', 'power2')
 

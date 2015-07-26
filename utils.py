@@ -56,7 +56,7 @@ def swipe(x, x2, y, y2, sleep_time=0):
 def crop_filename(image):
     return os.path.join(crops_base, image)+'.png'
 
-def click_on(image, sleep_time=0, update_screen=True, maxVal=0.9999):
+def click_on(image, sleep_time=0, update_screen=True, maxVal=0.999999):
     if update_screen:
         screencap()
     x, y = match_image(crop_filename(image), screencap_fn, maxVal)
