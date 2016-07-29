@@ -13,8 +13,10 @@ cmd_swipe = adb_cmd + ['input', 'swipe']
 screencap_fn='s.png'
 crops_base='crops'
 
-def startapp():
-    p=subprocess.Popen(['./startapp.sh'])
+def startapp(appname):
+    p=subprocess.Popen(adb_cmd+['am', 'force-stop', appname])
+    p.communicate()
+    p=subprocess.Popen(adb_cmd+['monkey', '-p', appname, '-c', 'android.intent.category.LAUNCHER', '1'])
     p.communicate()
 
 def screencap():
