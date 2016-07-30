@@ -13,9 +13,9 @@ if __name__ == '__main__':
     click_on('enter_game', 15)
     click_on('ccenter', 1)
     click_on('enter', 1)
-    swipe(1000, 250, 300, 300)
-    swipe(1000, 250, 300, 300)
-    click_on('champ_game', 1)
+    swipe(1000, 250, 300, 300, 1)
+    swipe(1000, 250, 300, 300, 1)
+    click_on('champ_game', 1, maxVal=0.99)
 
     today8=datetime.datetime.combine(datetime.date.today(), datetime.datetime.min.time())+datetime.timedelta(hours=20)
     today830=today8+datetime.timedelta(minutes=30)

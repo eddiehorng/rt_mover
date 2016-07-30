@@ -1,4 +1,4 @@
-import time
+import time, sys
 import cv2
 import os
 import numpy as np
@@ -13,15 +13,22 @@ cmd_swipe = adb_cmd + ['input', 'swipe']
 screencap_fn='s.png'
 crops_base='crops'
 
+def log(msg):
+    sys.stdout.write(msg+'\n')
+    sys.stdout.flush()
+
 def startapp(appname, sleep_time=0):
-    print 'entering %s' % appname
+    log('entering %s' % appname)
+    #p=subprocess.Popen(adb_cmd+['input', 'keyevent', '26'])
+    #p.communicate()
+    click(10,10)
     p=subprocess.Popen(adb_cmd+['am', 'force-stop', appname])
     p.communicate()
     p=subprocess.Popen(adb_cmd+['monkey', '-p', appname, '-c', 'android.intent.category.LAUNCHER', '1'])
     p.communicate()
     if sleep_time:
         time.sleep(sleep_time)
-    print 'waited %ds' % sleep_time
+    log( 'waited %ds' % sleep_time)
 
 def screencap(rotate=True):
     proc = subprocess.Popen(cmd_screencap, stdout=subprocess.PIPE)
@@ -40,7 +47,7 @@ def match_image(crop, capture, val):
 
     result = cv2.matchTemplate(image,template,cv2.TM_CCORR_NORMED)
     minVal,maxVal,minLoc,maxLoc = cv2.minMaxLoc(result)
-    print 'matching %s, maxVal=%f, val=%f' % (crop, maxVal, val)
+    log( 'matching %s, maxVal=%f, val=%f' % (crop, maxVal, val))
     #loc = np.where(result>0.99)
 
     if maxVal>=val:
@@ -52,7 +59,7 @@ def match_image(crop, capture, val):
 def click(x, y, sleep_time=0):
     p=subprocess.Popen(cmd_tap+[str(x+5),str(y+5)])
     p.communicate()
-    print 'click on (%d, %d)' % (x, y)
+    log( 'click on (%d, %d)' % (x, y))
     if sleep_time:
         time.sleep(sleep_time)
 
@@ -61,16 +68,16 @@ def swipe(x, x2, y, y2, sleep_time=0):
     p.communicate()
     if sleep_time:
         time.sleep(sleep_time)
-    print 'swipe (%d, %d) -> (%d, %d)' % (x, y, x2, y2)
+    log( 'swipe (%d, %d) -> (%d, %d)' % (x, y, x2, y2))
 
 def crop_filename(image):
     return os.path.join(crops_base, image)+'.png'
 
-def click_on(image, sleep_time=0, update_screen=True, maxVal=0.999999):
+def click_on(image, sleep_time=0, update_screen=True, maxVal=0.9999):
     if update_screen:
         screencap()
     x, y = match_image(crop_filename(image), screencap_fn, maxVal)
-    print 'match %s => (%d,%d)'%(image,x,y)
+    log( 'match %s => (%d,%d)'%(image,x,y))
     if x != -1:
         click(x, y, sleep_time)
         return True

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c8a451c-4160-45e2-8c32-0dfc15b2eb3e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crops/champ_game.png" afterPath="$PROJECT_DIR$/crops/champ_game.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ship.py" afterPath="$PROJECT_DIR$/ship.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
     </list>
@@ -52,8 +53,8 @@
       <file leaf-file-name="ship.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ship.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29508197" vertical-offset="0" max-vertical-offset="610">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.39344263" vertical-offset="0" max-vertical-offset="610">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
               </folding>
@@ -74,10 +75,10 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-              <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="1365">
+              <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -504,7 +505,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1140">
           <caret line="63" column="36" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="36" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -564,7 +565,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="1110">
           <caret line="58" column="68" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -616,7 +617,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="1110">
           <caret line="58" column="68" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,7 +669,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1110">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -720,7 +721,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1110">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -772,7 +773,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -879,10 +880,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="545" max-vertical-offset="1260">
-          <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="1365">
+          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ship.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29508197" vertical-offset="0" max-vertical-offset="610">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.39344263" vertical-offset="0" max-vertical-offset="610">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
           </folding>
