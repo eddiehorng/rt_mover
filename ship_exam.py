@@ -28,7 +28,7 @@ if __name__ == '__main__':
         if not click_on(ex, 3):
             log('failed to enter %s'%ex)
             continue
-        for r in range(0, 62):
+        for r in range(0, 65):
             log('take exam on %s, round %02d'%(ex, r))
             have_exam=False
             for exlv in exam_levels:
