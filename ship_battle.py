@@ -3,17 +3,24 @@ import datetime
 from utils import *
 from ship_common import *
 
+do_enter_game=0
 num_match=14
 
 if __name__ == '__main__':
-    game_name='champ_game'
-    if enter_game():
-        log('Failed to enter game')
-        sys.exit(1)
+    if do_enter_game:
+        if enter_game():
+            log('Failed to enter game')
+            sys.exit(1)
+        time.sleep(60)
+    else:
+        # back to main screen
+        click(1215, 72, 1)
+        click(1215, 72, 1)
 
     # drink
     click(1110, 200, 2)
     click(680, 640, 1)
+    click(1215, 72, 1)
 
     # enter battle
     click(1233, 550, 3)

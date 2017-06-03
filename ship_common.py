@@ -9,12 +9,12 @@ appname='com.chengyou.ltjd.tw'
 
 def enter_game():
     startapp(appname, 50)
-    for _ in range(0, 30):
+    for _ in range(0, 5):
         if click_on('close_win', 2, maxVal=0.99): break
     click(630, 680, 1)
     click(630, 680, 1)
     click(630, 680, 1)
-    if not click_on('enter_game', 20, retry=5): return False
+    if not click_on('enter_game', 20, maxVal=0.8, retry=5): return False
 
 def startapp_and_go_compmode(comp_crop, swipe_times, debug_no_start_app=False):
     if not debug_no_start_app:
