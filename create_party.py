@@ -5,7 +5,7 @@ from ship_common import *
 
 do_enter_game=False
 
-ntimes = 12
+ntimes = 50
 dn = [1, 3, 4, 3, 3]
 
 def party_party():

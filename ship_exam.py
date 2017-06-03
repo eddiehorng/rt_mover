@@ -8,7 +8,8 @@ exams=('exam_right', 'exam_left')
 exam_levels=(('exam1', 548, 490), ('exam2', 786, 490), ('exam3', 1022, 490))
 
 def handle_got_box():
-    click(1040, 490)    # sliver box
+    #click(1040, 490)    # sliver box
+    click(640, 490)    # attack box
     if not (click_on('confirm') or click_on('get_gift')):
         return False
     else:
@@ -28,8 +29,9 @@ if __name__ == '__main__':
         if not click_on(ex, 3):
             log('failed to enter %s'%ex)
             continue
-        for r in range(0, 65):
+        for r in range(0, 85):
             log('take exam on %s, round %02d'%(ex, r))
+            '''
             have_exam=False
             for exlv in exam_levels:
                 if not click_on(exlv[0], do_click=False):
@@ -45,6 +47,10 @@ if __name__ == '__main__':
                 handle_got_box()
                 #if handle_got_box():
                 #    break
+            '''
+            # always click 1st
+            click(exam_levels[0][1], exam_levels[0][2], 2)
+            handle_got_box()
         for _ in range(0, 3): click(636, 40, 1)
         click_on('close_win', 1, maxVal=0.99)
     log('Got gift: %d'%has_gift)
