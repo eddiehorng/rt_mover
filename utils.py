@@ -1,11 +1,13 @@
 import time, sys
-import cv2
+# import cv2
 import os
-import numpy as np
+# import numpy as np
 import subprocess
 
 
 adb_cmd = ['adb', 'shell']
+if os.name =='nt':
+    adb_cmd[0]+='.exe'
 cmd_screencap = adb_cmd + ['screencap', '-p']
 cmd_tap = adb_cmd + ['input', 'tap']
 cmd_swipe = adb_cmd + ['input', 'swipe']
