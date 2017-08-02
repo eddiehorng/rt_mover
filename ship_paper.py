@@ -38,15 +38,16 @@ def do_draw_paper():
 
 
 if __name__ == '__main__':
+    px, py = 600, 400
     game_name='ship_factory'
 
     for _ in range(3):
-        if not startapp_and_go_compmode(game_name, 0, debug_no_start_app=False):
+        if not startapp_and_go_compmode(px, py, game_name, 0, debug_no_start_app=False):
             log('Failed to enter %s' % game_name)
             sys.exit(0)
         do_draw_paper()
 
-    if not startapp_and_go_compmode(game_name, 0, debug_no_start_app=False):
+    if not startapp_and_go_compmode(px, py, game_name, 0, debug_no_start_app=False):
         log('Failed to enter %s' % game_name)
         sys.exit(0)
     do_paper_fight()
