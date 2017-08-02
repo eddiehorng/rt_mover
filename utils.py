@@ -61,7 +61,7 @@ def match_image(crop, capture, val):
 def click(x, y, sleep_time=0, hint=''):
     p=subprocess.Popen(cmd_tap+[str(x+5),str(y+5)])
     p.communicate()
-    log( 'click on (%d, %d) -- %s' % (x, y, hint))
+    log( 'click on (%d, %d) wait %ds -- %s' % (x, y, sleep_time, hint))
     if sleep_time:
         time.sleep(sleep_time)
 
