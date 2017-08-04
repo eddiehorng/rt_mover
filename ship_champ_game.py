@@ -5,7 +5,7 @@ from ship_common import *
 
 if __name__ == '__main__':
     game_name='champ_game'
-    if not startapp_and_go_compmode(game_name, 8):
+    if not startapp_and_go_compmode(650, 360, game_name, 3, debug_no_start_app=0):
         log('Failed to enter %s' % game_name)
         sys.exit(1)
 

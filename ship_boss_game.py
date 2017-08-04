@@ -5,7 +5,7 @@ from ship_common import *
 
 if __name__ == '__main__':
     game_name='boss_game'
-    if not startapp_and_go_compmode(game_name, 8):
+    if not startapp_and_go_compmode(390, 360, game_name, 6):
         log('Failed to enter %s' % game_name)
         sys.exit(1)
 

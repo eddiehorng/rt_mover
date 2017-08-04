@@ -66,11 +66,12 @@ def click(x, y, sleep_time=0, hint=''):
         time.sleep(sleep_time)
 
 def swipe(x, x2, y, y2, sleep_time=0):
+    log('swipe (%d, %d) -> (%d, %d)' % (x, y, x2, y2))
     p=subprocess.Popen(cmd_swipe+[str(x), str(x2), str(y), str(y2)])
     p.communicate()
     if sleep_time:
         time.sleep(sleep_time)
-    log( 'swipe (%d, %d) -> (%d, %d)' % (x, y, x2, y2))
+
 
 def crop_filename(image):
     return os.path.join(crops_base, image)+'.png'
