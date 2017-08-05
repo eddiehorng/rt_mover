@@ -15,8 +15,17 @@ if __name__ == '__main__':
         click(1215, 72, 2)
         click(1215, 72, 2)
 
-    swipe(300, 250, 900, 250, 2)
+    #shop
+    click(1090, 450, 1, hint='shop')
+    click(960, 680, 2, hint='enter button')
+    click(215, 200, 2, hint='black market')
+    click(600, 270, 1)
+    click(600, 445, 1)
+    click(1020, 270, 1)
+    click(1020, 445, 1)
+    click(1215, 72, 2, 'back to main screen')
 
+    swipe(300, 250, 900, 250, 2)
     click(690, 540, 1, hint='resource dust')
     click(470, 340, 1, hint='resource iron')
     click(200, 400, 1, hint='resource part')

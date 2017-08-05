@@ -3,7 +3,7 @@ import datetime
 from utils import *
 from ship_common import *
 
-do_enter_game=0
+do_enter_game=1
 num_match=40
 
 def enter_game_and_drink():
