@@ -25,6 +25,7 @@ def free_paper(n):
     click(draw_loc[n][0], draw_loc[n][1], 3)
     click(420, 630, 5, hint='free paper')
     click(630, 40, 1, hint='any')
+    click(630, 40, 1, hint='any')
     click(420, 630, 5, hint='free paper')
     #click_on('free_paper2', 30, maxVal=0.997)
     #click_on('free_paper', 30)

@@ -2,26 +2,21 @@
 import datetime
 from utils import *
 from ship_common import *
+from ship_drink_wine import enter_game_and_drink
 
-do_enter_game=0
-num_match=16
+num_match=40
 
 if __name__ == '__main__':
-    if do_enter_game:
-        if enter_game():
-            log('Failed to enter game')
-            sys.exit(1)
-        time.sleep(60)
-    else:
-        # back to main screen
-        click(1215, 72, 2)
-        click(1215, 72, 2)
-        click(1215, 72, 2)
+    enter_game_and_drink()
 
-    # drink
-    click(1110, 200, 4)
-    click(680, 640, 2)
-    click(1215, 72,21)
+    #buy power
+    click(45, 60, 2)
+    click(999, 210, 1, hint='buy button')
+    for _ in range(0, 3):
+        click(640, 600, 1, hint='diamon')
+        click(1215, 72, 2)
+    click(850, 215, 1, hint='close')
+    click(1215, 72, 2)
 
     # enter battle
     click(1233, 550, 6)
