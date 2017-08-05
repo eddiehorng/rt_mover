@@ -23,7 +23,7 @@ def startapp(appname, sleep_time=0):
     log('entering %s' % appname)
     #p=subprocess.Popen(adb_cmd+['input', 'keyevent', '26'])
     #p.communicate()
-    click(10,10)
+    #click(10,10)
     p=subprocess.Popen(adb_cmd+['am', 'force-stop', appname])
     p.communicate()
     p=subprocess.Popen(adb_cmd+['monkey', '-p', appname, '-c', 'android.intent.category.LAUNCHER', '1'])

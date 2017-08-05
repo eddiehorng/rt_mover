@@ -8,10 +8,7 @@ num_match=40
 
 def enter_game_and_drink():
     if do_enter_game:
-        if enter_game():
-            log('Failed to enter game')
-            sys.exit(1)
-        time.sleep(60)
+        enter_game()
     else:
         # back to main screen
         click(1215, 72, 2)
