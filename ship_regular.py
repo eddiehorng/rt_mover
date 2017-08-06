@@ -6,7 +6,7 @@ from ship_common import *
 do_enter_game=1
 num_match=40
 
-def enter_game_and_drink():
+def local_enter_game():
     if do_enter_game:
         enter_game()
     else:
@@ -14,6 +14,9 @@ def enter_game_and_drink():
         click(1215, 72, 2)
         click(1215, 72, 2)
         click(1215, 72, 2)
+
+def enter_game_and_drink():
+    local_enter_game()
 
     click(1225, 450, 2, hint='active')
     # 7 days gift
@@ -38,6 +41,12 @@ def enter_game_and_drink():
     click(205, 610, 1, hint='month card')
     click(600, 610, 1, hint='get')
 
+    #friend
+    local_enter_game()
+    click(1090, 680, 1, hint='more')
+    click(905, 570, 1, hint='friend')
+    click(1073, 660, 1, hint='give')
+    click(400, 660, 1, hint='get')
 
 
 if __name__ == '__main__':

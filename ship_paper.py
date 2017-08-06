@@ -37,6 +37,8 @@ def do_draw_paper():
     click(1055, 670, hint='draw paper')
     for n in range(0, len(draw_loc)):
         free_paper(n)
+        click(630, 40, 1, hint='any')
+        click(630, 40, 1, hint='any')
 
 
 if __name__ == '__main__':

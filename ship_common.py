@@ -8,10 +8,10 @@ appname='com.chengyou.ltjd.tw'
 #'com.senjiahk.fleet'
 
 def enter_game():
-    startapp(appname, 40)
-    for _ in range(0, 5):
+    startapp(appname, 30)
+    for _ in range(0, 3):
         click(630, 680, 1, hint='close info')
-    click(630, 600, 30, hint='enter game') # enter game
+    click(630, 600, 20, hint='enter game') # enter game
 
 def startapp_and_go_compmode(px, py, hint, swipe_times, debug_no_start_app=False):
     if not debug_no_start_app:
