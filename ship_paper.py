@@ -34,7 +34,7 @@ def free_paper(n):
 
 def do_draw_paper():
     #if click_on('draw_paper',3):
-    click(1055, 670, hint='draw paper')
+    click(1055, 670, 3, hint='draw paper')
     for n in range(0, len(draw_loc)):
         free_paper(n)
         click(630, 40, 1, hint='any')

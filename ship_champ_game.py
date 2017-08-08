@@ -5,7 +5,7 @@ from ship_common import *
 
 if __name__ == '__main__':
     game_name='champ_game'
-    startapp_and_go_compmode(650, 360, game_name, 3, debug_no_start_app=0)
+    startapp_and_go_compmode(1000, 300, game_name, 3, debug_no_start_app=0)
 
     today831=datetime.datetime.combine(datetime.date.today(), datetime.datetime.min.time())+datetime.timedelta(hours=20, minutes=31)
     while True:
