@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c8a451c-4160-45e2-8c32-0dfc15b2eb3e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ship_boss_game.py" afterPath="$PROJECT_DIR$/ship_boss_game.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ship_champ_game.py" afterPath="$PROJECT_DIR$/ship_champ_game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ship_common.py" afterPath="$PROJECT_DIR$/ship_common.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ship_god_.py" afterPath="$PROJECT_DIR$/ship_god_.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ship_paper.py" afterPath="$PROJECT_DIR$/ship_paper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ship_regular.py" afterPath="$PROJECT_DIR$/ship_regular.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ship_resource.py" afterPath="$PROJECT_DIR$/ship_resource.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
     </list>
     <ignored path="rt_mover.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +28,11 @@
       <file leaf-file-name="ship_battle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship_battle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ship_drink_wine.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ship_drink_wine.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -60,7 +50,7 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="119">
               <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
               <folding />
             </state>
@@ -70,18 +60,18 @@
       <file leaf-file-name="ship_god_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship_god_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="190">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ship_regular.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ship_regular.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ship_regular.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,8 +80,8 @@
       <file leaf-file-name="ship_resource.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship_resource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="179">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
               </folding>
@@ -99,11 +89,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ship_paper.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ship_exam.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ship_exam.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ship_paper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship_paper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="19" />
+            <state relative-caret-position="235">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,8 +112,8 @@
       <file leaf-file-name="ship_common.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship_common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="271">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -122,8 +122,8 @@
       <file leaf-file-name="ship_champ_game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship_champ_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="228">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -147,20 +147,20 @@
         <option value="$PROJECT_DIR$/ship_battle.py" />
         <option value="$PROJECT_DIR$/test.sh" />
         <option value="$PROJECT_DIR$/ship_drink_wine.py" />
-        <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/ship_regular.py" />
-        <option value="$PROJECT_DIR$/ship_resource.py" />
         <option value="$PROJECT_DIR$/ship_common.py" />
-        <option value="$PROJECT_DIR$/ship_champ_game.py" />
         <option value="$PROJECT_DIR$/ship_boss_game.py" />
-        <option value="$PROJECT_DIR$/ship_god_.py" />
         <option value="$PROJECT_DIR$/ship_paper.py" />
+        <option value="$PROJECT_DIR$/ship_resource.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/ship_champ_game.py" />
+        <option value="$PROJECT_DIR$/ship_god_.py" />
+        <option value="$PROJECT_DIR$/ship_regular.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="925" />
-    <option name="y" value="296" />
+    <option name="x" value="1017" />
+    <option name="y" value="316" />
     <option name="width" value="1340" />
     <option name="height" value="744" />
   </component>
@@ -221,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ship_boss_game">
+  <component name="RunManager" selected="Python.ship_god_">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -389,6 +389,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="ship_exam" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rt_mover" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ship_exam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="ship_god_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -402,23 +419,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="rt_mover" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ship_god_.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="ship_regular" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="rt_mover" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ship_regular.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -443,17 +443,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ship_champ_game" />
       <item index="1" class="java.lang.String" itemvalue="Python.ship_resource" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ship_regular" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ship_god_" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ship_boss_game" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ship_god_" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ship_boss_game" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ship_exam" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ship_boss_game" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ship_resource" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ship_god_" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ship_champ_game" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ship_regular" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ship_god_" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ship_champ_game" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ship_exam" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ship_resource" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ship_boss_game" />
       </list>
     </recent_temporary>
   </component>
@@ -474,15 +474,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="925" y="296" width="1340" height="744" extended-state="0" />
+    <frame x="1017" y="316" width="1340" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34042552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34042552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -784,14 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship_exam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ship_drink_wine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -800,47 +793,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship_battle.py">
+    <entry file="file://$PROJECT_DIR$/ship_paper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ship_regular.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="235">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ship_resource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="179">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ship_champ_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,26 +819,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship_common.py">
+    <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ship_exam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ship_champ_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ship_common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ship_god_.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="190">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship_paper.py">
+    <entry file="file://$PROJECT_DIR$/ship_battle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="19" />
+        <state relative-caret-position="152">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#18#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ship_regular.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>

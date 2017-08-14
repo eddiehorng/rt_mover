@@ -17,11 +17,11 @@ def local_enter_game():
 if __name__ == '__main__':
     local_enter_game()
     swipe(300, 250, 900, 250, 2)
-    click(690, 540, 1, hint='resource dust')
-    click(470, 340, 1, hint='resource iron')
-    click(200, 400, 1, hint='resource part')
-    click(115, 270, 1, hint='resource yellow')
-    click(400, 160, 1, hint='resource money')
+    click(890, 540, 1, hint='resource dust')
+    click(640, 340, 1, hint='resource iron')
+    click(380, 400, 1, hint='resource part')
+    click(280, 270, 1, hint='resource yellow')
+    click(500, 160, 1, hint='resource money')
 
     local_enter_game()
     #shop
