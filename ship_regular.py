@@ -55,7 +55,8 @@ def enter_game_and_drink():
     click(60, 230, 1, hint='adv')
 
     # fight
-    for x, y in ((1100, 680), (1100, 330), (1100, 40)):
+    #for x, y in ((1100, 680), (1100, 330), (1100, 40)):
+    for x, y in ((1100, 680), (1100, 330)): #, (1100, 40)):
         click(x, y, 1)
         click(500, 550, 3, hint='enter war')
         for _ in range(0, 3):

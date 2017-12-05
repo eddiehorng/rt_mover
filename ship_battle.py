@@ -4,19 +4,19 @@ from utils import *
 from ship_common import *
 from ship_drink_wine import enter_game_and_drink
 
-num_match=40
+num_match=25
 
 if __name__ == '__main__':
     enter_game_and_drink()
 
     #buy power
-    click(45, 60, 2)
-    click(999, 210, 1, hint='buy button')
-    for _ in range(0, 3):
-        click(640, 600, 1, hint='diamon')
-        click(1215, 72, 2)
-    click(850, 215, 1, hint='close')
-    click(1215, 72, 2)
+    # click(45, 60, 2)
+    # click(999, 210, 1, hint='buy button')
+    # for _ in range(0, 3):
+    #     click(640, 600, 1, hint='diamon')
+    #     click(1215, 72, 2)
+    # click(850, 215, 1, hint='close')
+    # click(1215, 72, 2)
 
     # enter battle
     click(1233, 550, 6)
