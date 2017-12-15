@@ -14,11 +14,12 @@ if __name__ == '__main__':
 
     click(1070, 720, 2, hint='button: next page')
     click(1070, 720, 2, hint='button: next page')
-    click(1070, 720, 2, hint='button: next page')
+    # click(1070, 720, 2, hint='button: next page')
 
-    # fight
-    click(1070, 320, 2, hint='select one match')
-    #fight (not sure location correct)
-    click(640, 660, 0)
+    for dy in range(0, 5, 70):
+        # fight
+        click(1070, 320+dy, 2, hint='select one match')
+        #fight (not sure location correct)
+        click(640, 660, 60)
 
 
