@@ -15,6 +15,13 @@ if __name__ == '__main__':
 
     # for _ in range(0, 4):
     #     click(1070, 720, 2, hint='button: next page')
+    today2040=datetime.datetime.combine(datetime.date.today(), datetime.datetime.min.time())+datetime.timedelta(hours=20,minutes=40,seconds=5)
+    while True:
+        now=datetime.datetime.now()
+        if now>today2040:
+            break
+
+    print 'start fight at: {}'.format(datetime.datetime.now())
 
     for dy in range(0, 350, 70):
         # fight
