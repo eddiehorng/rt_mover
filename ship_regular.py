@@ -48,8 +48,14 @@ def enter_game_and_drink():
     click(1073, 660, 1, hint='give')
     click(400, 660, 1, hint='get')
 
-    #advanced war
+    # 任務
     local_enter_game()
+    click(1225, 200, 2, hint='mission')
+    for _ in range(6):
+        click(1100, 230, 2, hint='get')
+
+    #advanced war
+    # local_enter_game()
     # # enter battle
     # click(1233, 550, 6)
     # click(60, 230, 1, hint='adv')

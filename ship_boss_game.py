@@ -9,7 +9,7 @@ if __name__ == '__main__':
         log('Failed to enter %s' % game_name)
         sys.exit(1)
 
-    today1245=datetime.datetime.combine(datetime.date.today(), datetime.datetime.min.time())+datetime.timedelta(hours=12,minutes=45)
+    today1245=datetime.datetime.combine(datetime.date.today(), datetime.datetime.min.time())+datetime.timedelta(hours=13,minutes=45)
     while True:
         now=datetime.datetime.now()
         if now>today1245:

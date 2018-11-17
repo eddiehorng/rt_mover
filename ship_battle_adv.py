@@ -4,7 +4,7 @@ from utils import *
 from ship_common import *
 from ship_drink_wine import enter_game_and_drink
 
-num_match=4
+num_match=1
 
 if __name__ == '__main__':
     enter_game()
