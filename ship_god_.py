@@ -29,7 +29,11 @@ if __name__ == '__main__':
 
     # ship resource
     startapp_and_go_compmode(930, 360, 'ship resource', 2)
-    for x in range(4):
+    for _ in range(0, 1):
         swipe(600, 400, 800, 400, 2)
-        click(230+x*320, 600, 10)
-        click(640, 40, 8)
+        click(1145, 600, 8)
+    # click 4
+    # for x in range(4):
+    #     swipe(600, 400, 800, 400, 2)
+    #     click(180+x*320, 600, 10)
+    #     click(640, 40, 8)
