@@ -5,8 +5,8 @@ from ship_common import *
 
 do_enter_game=False
 
-ntimes = 50
-dn = [1, 3, 4, 3, 3]
+ntimes = 100
+dn = [4, 3, 5, 3, 2]
 
 def party_party():
     normal_wait = 0.3

@@ -25,11 +25,13 @@ if __name__ == '__main__':
     # skip #40
     swipe(100, 600, 500, 500, 2)
     click(500, 500, 2)
-    # fight
-    for _ in range(0, num_match):
-        for _ in range(0, 3):
-            click(200, 670, 3)
-            click(500, 500, 2)
-        swipe(100, 600, 500, 500, 2)
+
+    # click(858, 155, 3, hint='circule-4')
+    # # fight
+    # for _ in range(0, num_match):
+    #     for _ in range(0, 3):
+    #         click(200, 670, 3)
+    #         click(500, 500, 2)
+    #     swipe(100, 600, 500, 500, 2)
 
 

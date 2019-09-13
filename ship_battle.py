@@ -20,14 +20,20 @@ if __name__ == '__main__':
 
     # enter battle
     click(1233, 550, 6)
+    click(1120, 620, 3, hint='#39')
     click(500, 550, 3)
 
+    click(858, 155, 3, hint='circule-4')
+    for _ in range(0, 5):
+        click(200, 670, 3)
+        click(500, 500, 2)
+
     # fight
-    for _ in range(0, num_match):
-        for _ in range(0, 3):
-            click(200, 670, 3)
-            click(500, 500, 2)
-        swipe(100, 600, 500, 500, 2)
+    # for _ in range(0, num_match):
+    #     for _ in range(0, 3):
+    #         click(200, 670, 3)
+    #         click(500, 500, 2)
+    #     swipe(100, 600, 500, 500, 2)
 
 
 

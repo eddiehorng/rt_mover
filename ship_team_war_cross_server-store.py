@@ -12,9 +12,14 @@ if __name__ == '__main__':
     click(955, 630, 5, hint='team war-cross server')
 
     click(1055, 700, 2, hint='store')
-    for _ in range(0, 12):
-        click(600, 640, 1, hint='soldier')
+
+
+    for _ in range(0, 8):
+        click(600, 450, 3, hint='big treasure box')
+
+    for _ in range(0, 20):
+        click(600, 640, 3, hint='soldier')
 
     swipe(500, 600, 500, 300, 2)
-    for _ in range(0, 5):
-        click(600, 670, 1, hint='equipment box')
+    for _ in range(0, 9):
+        click(600, 670, 3, hint='equipment box')

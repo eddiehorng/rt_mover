@@ -1,22 +1,26 @@
+# -*- coding: utf-8 -*-
 import time, sys
-# import cv2
+import cv2
 import os
-# import numpy as np
+import numpy as np
 import subprocess
-
-
-adb_cmd = ['adb', 'shell']
-if os.name =='nt':
-    adb_cmd[0]+='.exe'
-cmd_screencap = adb_cmd + ['screencap', '-p']
-cmd_tap = adb_cmd + ['input', 'tap']
-cmd_swipe = adb_cmd + ['input', 'swipe']
 
 screencap_fn='s.png'
 crops_base='crops'
 
+adb_cmd = ['adb', 'shell']
+if os.name =='nt':
+    adb_cmd[0]+='.exe'
+# cmd_screencap = adb_cmd + ['screencap', '-p']
+cmd_screencap = adb_cmd + ['screencap', '-p', '/sdcard/screen.png']
+cmd_pull_scap = ['adb', 'pull', '/sdcard/screen.png', screencap_fn]
+cmd_tap = adb_cmd + ['input', 'tap']
+cmd_swipe = adb_cmd + ['input', 'swipe']
+
+
+
 def log(msg):
-    sys.stdout.write(msg+'\n')
+    sys.stdout.write(msg)
     sys.stdout.flush()
 
 def startapp(appname, sleep_time=0):
@@ -32,15 +36,20 @@ def startapp(appname, sleep_time=0):
         time.sleep(sleep_time)
     log( 'waited %ds' % sleep_time)
 
-def screencap(rotate=True):
-    proc = subprocess.Popen(cmd_screencap, stdout=subprocess.PIPE)
-    data = subprocess.check_output(['dos2unix'], stdin=proc.stdout)
-    proc.wait()
-    with open(screencap_fn, 'w') as f:
-        f.write(data)
-        f.close()
-    if rotate:
-        subprocess.Popen(['convert', '-rotate', '-90', screencap_fn, screencap_fn]).wait()
+# def screencap(rotate=True):
+#     proc = subprocess.Popen(cmd_screencap, stdout=subprocess.PIPE)
+#     data = subprocess.check_output(['dos2unix'], stdin=proc.stdout)
+#     proc.wait()
+#
+#     with open(screencap_fn, 'w') as f:
+#         f.write(data)
+#         f.close()
+#     # if rotate:
+#     #     subprocess.Popen(['convert', '-rotate', '-90', screencap_fn, screencap_fn]).wait()
+
+def screencap():
+    subprocess.check_output(cmd_screencap)
+    subprocess.check_output(cmd_pull_scap)
 
 
 def match_image(crop, capture, val):
@@ -77,14 +86,14 @@ def swipe(x1, y1, x2, y2, sleep_time=0):
 def crop_filename(image):
     return os.path.join(crops_base, image)+'.png'
 
-def click_on(image, sleep_time=0, update_screen=True, maxVal=0.9999, do_click=True, retry=1):
+def click_on(image, sleep_time=0, update_screen=True, maxVal=0.9999, shift_x=0, shift_y=0, do_click=True, retry=1):
     for _ in range(0, retry):
         if update_screen:
             screencap()
         x, y = match_image(crop_filename(image), screencap_fn, maxVal)
         log( 'match %s => (%d,%d)'%(image,x,y))
         if x != -1:
-            if do_click: click(x, y, sleep_time)
+            if do_click: click(x+shift_x, y+shift_y, sleep_time)
             return True
 
     return False
