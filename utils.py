@@ -5,6 +5,8 @@ import os
 import numpy as np
 import subprocess
 
+os.chdir(os.path.dirname(__file__))
+
 screencap_fn='s.png'
 crops_base='crops'
 
@@ -20,7 +22,7 @@ cmd_swipe = adb_cmd + ['input', 'swipe']
 
 
 def log(msg):
-    sys.stdout.write(msg)
+    sys.stdout.write(msg+'\n')
     sys.stdout.flush()
 
 def startapp(appname, sleep_time=0):

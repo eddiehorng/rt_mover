@@ -28,10 +28,12 @@ if __name__ == '__main__':
     click(1090, 450, 1, hint='shop')
     click(960, 680, 2, hint='enter button')
     click(215, 200, 2, hint='black market')
-    click(600, 270, 1)
-    # click(600, 445, 1)
-    click(1020, 270, 1)
-    # click(1020, 445, 1)
+    for _ in range(0, 4):
+        click_on('money', sleep_time=2, maxVal=0.95)
+    # click(600, 270, 1)
+    # # click(600, 445, 1)
+    # click(1020, 270, 1)
+    # # click(1020, 445, 1)
     click(1215, 72, 2, 'back to main screen')
 
 

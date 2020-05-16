@@ -25,16 +25,16 @@ if __name__ == '__main__':
     click(850, 480, 8)
 
 
-    # 初級
-    click(850, 480, 2, hint='cancel')
-    click(180, 180, 2)
-    click(1140, 670, 90)
-    click(850, 480, 8)
-    # 中級
-    click(850, 480, 2, hint='cancel')
-    click(180, 245, 2)
-    click(1140, 670, 90)
-    click(850, 480, 8)
+    # # 初級
+    # click(850, 480, 2, hint='cancel')
+    # click(180, 180, 2)
+    # click(1140, 670, 90)
+    # click(850, 480, 8)
+    # # 中級
+    # click(850, 480, 2, hint='cancel')
+    # click(180, 245, 2)
+    # click(1140, 670, 90)
+    # click(850, 480, 8)
 
 
     # 裝備副本
