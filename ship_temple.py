@@ -28,9 +28,9 @@ def temple():
     # click(740, 410, 3, hint='命中強化III')
 
     click(640, 675, 1, hint='特殊技巧')
-    # swipe(500, 500, 500, 250, 1)
-    # swipe(500, 500, 500, 250, 1)
-    # click(615, 600, 2, hint='無情打擊')
+    swipe(500, 500, 500, 250, 1)
+    swipe(500, 500, 500, 250, 1)
+    click(615, 600, 2, hint='無情打擊')
     # click(650, 450, 2, hint='戰略掩護')
     # click(360, 565, 2, hint='閃避強化II')
 
@@ -52,7 +52,7 @@ def temple():
     # click(190, 400, 1, hint='護盾強化IV')
     # click(290, 600, 1, hint='閃避強化I')
 
-    click(650, 300, 1, hint='憤怒出擊')
+    # click(650, 300, 1, hint='憤怒出擊')
     # click(850, 350, 1, hint='窮追猛打')
     # click(800, 550, 1, hint='臨終X敵')
 
