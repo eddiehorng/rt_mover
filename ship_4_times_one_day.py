@@ -17,9 +17,10 @@ if __name__ == '__main__':
     click(445, 255, 2, hint='enter scheel')
     click(970, 690, 2, hint='enter button')
     click(210, 280, 2, hint='scheel store')
-    for _ in range(0, 6):
-        if not click_on('war_coin', sleep_time=2, maxVal=0.95):
-            break
+    for _ in range(0, 4):
+        # if not click_on('war_coin', sleep_time=2, maxVal=0.95):
+        click_on('peice', shift_x=-100, shift_y=100, sleep_time=2, maxVal=0.95)
+        click_on('org_power', shift_x=-60, shift_y=100, sleep_time=2, maxVal=0.95)
         click(1150, 300, 1, hint='any')
     click_on('close_win2', sleep_time=2, maxVal=0.99)
     click_on('close_win2', sleep_time=2, maxVal=0.99)

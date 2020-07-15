@@ -55,6 +55,33 @@ def enter_game_and_drink():
     for _ in range(6):
         click(1100, 230, 2, hint='get')
 
+    # donate
+    dn = [4, 4, 5, 3, 3]
+    local_enter_game()
+    click(860, 680, 2, hint='enter team')
+    click(380, 630, 1, hint='donate')
+    click(1050, 230, 1, 'donate 1st')
+    xx = 280
+    dx = 180
+    for x2 in range(0, 5):
+        for _ in range(0, dn[x2]):
+            click(xx+x2*dx, 530, 0)
+
+    # free get generel
+    local_enter_game()
+    click(445, 255, 2, hint='enter scheel')
+    click(970, 690, 2, hint='enter button')
+    click_on('free2', shift_x=0, shift_y=50, sleep_time=2, maxVal=0.95)
+    click(1150, 300, 1, hint='any')
+    click(200, 200, 2, hint='sea member')
+    click_on('free3', shift_x=0, shift_y=0, sleep_time=1, maxVal=0.95)
+    click(400, 340, 1, hint='1')
+    click(650, 340, 1, hint='1')
+    click(900, 340, 1, hint='1')
+    click(400, 645, 1, hint='1')
+    click(650, 645, 1, hint='1')
+    click(900, 645, 1, hint='1')
+
     #advanced war
     local_enter_game()
     # enter battle
