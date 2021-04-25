@@ -83,22 +83,22 @@ def enter_game_and_drink():
     click(900, 645, 1, hint='1')
 
     #advanced war
-    local_enter_game()
-    # enter battle
-    click(1233, 550, 6)
-    click(60, 230, 1, hint='adv')
-
-    # fight
-    #for x, y in ((1100, 680), (1100, 330), (1100, 40)):
-    # for x, y in ((1100, 680), (1100, 330)): #, (1100, 40)):
-    #     click(x, y, 1)
-
-    click(500, 550, 3, hint='enter war')
-    click(750, 335, 1, hint='5')
-    for _ in range(0, 5):
-        click(200, 670, 3)
-        click(500, 500, 2)
-    click(220, 120, 3, hint='world map')
+    # local_enter_game()
+    # # enter battle
+    # click(1233, 550, 6)
+    # click(60, 230, 1, hint='adv')
+    #
+    # # fight
+    # #for x, y in ((1100, 680), (1100, 330), (1100, 40)):
+    # # for x, y in ((1100, 680), (1100, 330)): #, (1100, 40)):
+    # #     click(x, y, 1)
+    #
+    # click(500, 550, 3, hint='enter war')
+    # click(750, 335, 1, hint='5')
+    # for _ in range(0, 5):
+    #     click(200, 670, 3)
+    #     click(500, 500, 2)
+    # click(220, 120, 3, hint='world map')
 
 if __name__ == '__main__':
     enter_game_and_drink()

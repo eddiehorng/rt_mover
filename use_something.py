@@ -1,12 +1,12 @@
 #!/usr/bin/python
-import datetime
+import datetime, os
 from utils import *
 from ship_common import *
 
 do_enter_game=False
 
-ntimes = 500
-delay=1
+ntimes = int(os.environ.get('ntimes', 250))
+delay = int(os.environ.get('delay', 3))
 
 if __name__ == '__main__':
     for i in range(0, ntimes):

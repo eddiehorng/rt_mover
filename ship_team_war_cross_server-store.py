@@ -14,8 +14,8 @@ if __name__ == '__main__':
     click(1055, 700, 2, hint='store')
 
 
-    for _ in range(0, 8):
-        click(600, 450, 3, hint='big treasure box')
+    # for _ in range(0, 8):
+    #     click(600, 450, 3, hint='big treasure box')
 
     for _ in range(0, 20):
         click(600, 640, 3, hint='soldier')

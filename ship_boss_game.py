@@ -9,12 +9,12 @@ if __name__ == '__main__':
         log('Failed to enter %s' % game_name)
         sys.exit(1)
 
-    end_time=datetime.datetime.combine(datetime.date.today(), datetime.datetime.min.time())+datetime.timedelta(hours=12,minutes=55)
+    end_time=datetime.datetime.combine(datetime.date.today(), datetime.datetime.min.time())+datetime.timedelta(hours=12,minutes=58)
     while True:
         now=datetime.datetime.now()
         if now>end_time:
             break
-        click(615, 670, 2)  #enter fight
+        click(615, 670, 3)  #enter fight
     print 'Bye, its %s' % now
 
 

@@ -43,7 +43,7 @@ def do_draw_paper():
 
 if __name__ == '__main__':
     px, py = 600, 400
-    game_name='ship_factory'
+    game_name='ship_paper'
 
     startapp_and_go_compmode(px, py, game_name, 0, debug_no_start_app=False)
     do_draw_paper()

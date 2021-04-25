@@ -12,8 +12,8 @@ if __name__ == '__main__':
         now=datetime.datetime.now()
         if now>today831:
             break
-        click(640, 390, 0.5)  #match
-        click(640, 660, 0.5)  #fight
+        click(640, 390, 2)  #match
+        click(640, 660, 3)  #fight
     print 'Bye, its %s' % now
 
 

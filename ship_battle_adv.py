@@ -7,6 +7,8 @@ from ship_drink_wine import enter_game_and_drink
 num_match=1
 
 if __name__ == '__main__':
+    sys.exit(0)
+
     enter_game()
 
     #buy power

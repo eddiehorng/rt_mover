@@ -9,10 +9,10 @@ if __name__ == '__main__':
     startapp_and_go_compmode(720, 360, 'wakeup-sub', 12, debug_no_start_app=0)
 
     # 高級
-    click(850, 480, 2, hint='cancel')
-    click(180, 310, 2)
-    click(1140, 670, 90)
-    click(850, 480, 8)
+    # click(850, 480, 2, hint='cancel')
+    # click(180, 310, 2)
+    # click(1140, 670, 90)
+    # click(850, 480, 8)
     # 王者級
     click(850, 480, 2, hint='cancel')
     click(180, 380, 2)
