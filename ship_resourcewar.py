@@ -13,7 +13,7 @@ if __name__ == '__main__':
     click(1100, 590, sleep_time=2, hint='store')
     click(590, 250, sleep_time=2, hint='buy left-top')
     for _ in range(0, 2):
-        # click_on('mr_lo', shift_x=200, shift_y=50, sleep_time=1, maxVal=0.99)
+        click_on('mr_lo', shift_x=200, shift_y=50, sleep_time=1, maxVal=0.99)
         click_on('org_power', shift_x=0, shift_y=110, sleep_time=1, maxVal=0.99)
         click_on('soldier_food', shift_x=0, shift_y=110, sleep_time=1, maxVal=0.98)
     click_on('close_win2', sleep_time=1, maxVal=0.99)

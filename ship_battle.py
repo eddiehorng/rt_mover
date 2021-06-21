@@ -24,7 +24,7 @@ if __name__ == '__main__':
     click(500, 550, 3)
 
     click(755, 335, 3, hint='circule-5')
-    for _ in range(0, 5):
+    for _ in range(0, 15):
         click(200, 670, 3)
         click(500, 500, 2)
 

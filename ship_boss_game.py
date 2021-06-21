@@ -14,7 +14,7 @@ if __name__ == '__main__':
         now=datetime.datetime.now()
         if now>end_time:
             break
-        click(615, 670, 3)  #enter fight
+        click(615, 670, 1)  #enter fight
     print 'Bye, its %s' % now
 
 
