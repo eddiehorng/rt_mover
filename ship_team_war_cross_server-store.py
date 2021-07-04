@@ -23,3 +23,5 @@ if __name__ == '__main__':
     swipe(500, 600, 500, 300, 2)
     for _ in range(0, 9):
         click(600, 670, 3, hint='equipment box')
+
+    go_home()

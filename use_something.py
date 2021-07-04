@@ -17,4 +17,4 @@ if __name__ == '__main__':
             click(1025, 580, 1, hint='any')
 
 
-
+    go_home()

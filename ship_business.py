@@ -11,5 +11,5 @@ if __name__ == '__main__':
     for _ in range(0, 6):
         click_on('free1', sleep_time=2, maxVal=0.96)
 
-
+    go_home()
 

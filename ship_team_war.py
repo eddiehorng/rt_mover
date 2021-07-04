@@ -36,4 +36,4 @@ if __name__ == '__main__':
             # click(640, 320, 1, hint='any')
         click(1070, 680, 1, hint='next page')
 
-
+    go_home()

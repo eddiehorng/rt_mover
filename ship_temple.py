@@ -71,4 +71,4 @@ def temple():
 
 if __name__ == '__main__':
     temple()
-
+    go_home()

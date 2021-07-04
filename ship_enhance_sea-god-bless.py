@@ -17,3 +17,4 @@ if __name__ == '__main__':
             click(530, 450, 0, hint='no save')
         print '#{}, hit {}, {:.3}%'.format(i, hit_count, (float(hit_count)*100/(i+1)))
 
+    go_home()

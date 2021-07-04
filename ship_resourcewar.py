@@ -38,5 +38,5 @@ if __name__ == '__main__':
         # click(940, 270, sleep_time=1, hint='X')
         # click(1140, 70, sleep_time=1, hint='X')
 
-
+    go_home()
 

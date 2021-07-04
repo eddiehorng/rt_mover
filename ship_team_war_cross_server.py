@@ -22,3 +22,4 @@ if __name__ == '__main__':
     take_oil(900, 630, 0)
     take_oil(1180, 500, 0)
     # take_oil(380, 200, 0)
+    go_home()

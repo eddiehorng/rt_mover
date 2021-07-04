@@ -28,6 +28,8 @@ if __name__ == '__main__':
         click(200, 670, 3)
         click(500, 500, 2)
 
+    go_home()
+
     # # enter battle
     # click(1233, 550, 6)
     # click(1120, 620, 3, hint='#39')

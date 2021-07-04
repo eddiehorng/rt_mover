@@ -14,3 +14,4 @@ if __name__ == '__main__':
         # click(840, 210, 1, hint='any')
 
 
+    go_home()

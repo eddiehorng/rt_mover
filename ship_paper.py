@@ -51,7 +51,7 @@ if __name__ == '__main__':
     startapp_and_go_compmode(px, py, game_name, 0, debug_no_start_app=False)
     do_paper_fight()
 
-
+    go_home()
 
 
 

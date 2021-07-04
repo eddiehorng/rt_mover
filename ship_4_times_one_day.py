@@ -25,3 +25,4 @@ if __name__ == '__main__':
     click_on('close_win2', sleep_time=2, maxVal=0.99)
     click_on('close_win2', sleep_time=2, maxVal=0.99)
 
+    go_home()

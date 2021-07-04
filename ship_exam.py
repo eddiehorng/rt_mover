@@ -21,7 +21,7 @@ if __name__ == '__main__':
             if (r+1) % 5 == 0:
                 click(1048, 670, 1, hint='confirm')
         time.sleep(30)
-
+    go_home()
 
 
 

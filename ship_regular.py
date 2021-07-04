@@ -103,3 +103,4 @@ def enter_game_and_drink():
 if __name__ == '__main__':
     enter_game_and_drink()
 
+    go_home()

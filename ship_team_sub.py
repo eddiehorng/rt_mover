@@ -23,3 +23,4 @@ if __name__ == '__main__':
                 continue
         swipe(770, 100, 350, 100)
 
+    go_home()

@@ -36,6 +36,6 @@ if __name__ == '__main__':
     # # click(1020, 445, 1)
     click(1215, 72, 2, 'back to main screen')
 
-
+    go_home()
 
 

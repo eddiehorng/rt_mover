@@ -17,4 +17,4 @@ if __name__ == '__main__':
         click(615, 670, 1)  #enter fight
     print 'Bye, its %s' % now
 
-
+    go_home()

@@ -18,6 +18,6 @@ if __name__ == '__main__':
         click(1060, 580, 120, hint='challenge')
         click(1060, 580, 61*5)
 
-
+    go_home()
 
 

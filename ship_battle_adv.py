@@ -28,6 +28,7 @@ if __name__ == '__main__':
     swipe(100, 600, 500, 500, 2)
     click(500, 500, 2)
 
+    go_home()
     # click(858, 155, 3, hint='circule-4')
     # # fight
     # for _ in range(0, num_match):

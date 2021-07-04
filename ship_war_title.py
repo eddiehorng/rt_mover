@@ -24,3 +24,4 @@ if __name__ == '__main__':
         else:
             click(1090, 680, hint='spend 1000, change')
 
+    go_home()
